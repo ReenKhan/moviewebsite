@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Top 5 highest grossing Movies</title>
+	<link rel="stylesheet" href="../styles/normalize.css">
+	<link rel="stylesheet" href="../styles/feedback.css">
+	<link rel="shortcut icon" href="../images/favicon.jpg">
+</head>
+
+<body>
+
+  <header>
+  	<img src="../images/header.png" alt="movie reel" width="85">
+   	<h2>The Top 5 highest Grossing Movies</h2>
+   	<h3>Of All Time!</h3>
+  </header>
+  <nav id="nav_menu">
+  	<ul>
+    	<li><a href="../index.html">Home</a></li>
+    	<li><a href="">Movies</a>
+			<ul>
+    			<li><a href="#">1. Avengers: Endgame(2019)</a>
+					<ul>
+						<li><a href="plot.html">Plot</a></li>
+						<li><a href="production.html">Production</a></li>
+					</ul>
+				</li>
+    			<li><a href="#">2. Avatar(2009)</a>
+</a>
+				<ul>
+						<li><a href="avatar.html">Synopsis</a></li>
+				</ul>
+				</li>				
+    			<li><a href="titanic.html">3. Titanic(1997)</a></li>
+    			<li><a href="starwars.html">4. Star Wars: The Force Awakens(2015)</a></li>
+				<li><a href="avengers2.html">5. Avengers: Infinity War(2018)</a></li>
+    		</ul>
+    	</li>
+		<li><a href="table.html" >List</a></li>
+		<li><a href="feedback.html" class="current">Feedback</a></li>
+    	</ul>
+  </nav>
+ 
+	<aside class="left">
+		<a href="../index.html"><img class="circle" src="../images/home.png" alt="Home Image" width="85" height="85"></a>
+		<p>Home</p>
+   		<a href="images.html"><img class="circle" src="../images/images.png" alt="image icon" width="85" height="85"></a>
+		<p>Images</p>
+		<a href="table.html"><img class="circle" src="../images/list.png" alt="list Image" width="85" height="85"></a>
+		<p>List</p>
+   		<a href="feedback.html"><img class="circle" src="../images/feedback.png" alt="feedback Image" width="85" height="85"></a>
+		<p>Feedback</p>
+	</aside>
+	
+	<section class="middle">
+				<h3>Please Enter The Following Information:</h3><br>
+					<form action="" method="get" name="email_form">
+					<label for="firstname">First Name:</label>
+					<input type="text" name="firstname" id="firstname" autofocus required><br>
+					<label for="lastname">Last Name:</label>
+					<input type="text" name="lastname" id="lastname" required><br>
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="email" required><br>
+					<label for="zipcode">Zipcode:</label>
+					<input type="text" name="zipcode" id="zipcode" pattern="[0-9]{5}" title="Must be in format 99999" placeholder="Optional but appreciated"><br>
+					<label for="favlistbox">Which Movie did you like the most??</label>
+					<select name="favlistbox" size="3" multiple>
+						<option value="Avengers1">1. Avengers: Endgame(2019)</option>
+						<option value="Avatar">2. Avatar(2009)</option>
+						<option value="Titanic">3. Titanic(1997)</option>
+						<option value="Starwars:">4. Star Wars(2015)</option>
+						<option value="Avengers2">5. Avengers: Infinity War(2018)</option>
+					<label for="comments">Comments:</label>
+					<textarea id="commentstext" rows="8" cols="55"></textarea><br>
+					
+					<input type="submit" name="submit" id="buttonsubmit" value="Subscribe">
+					<input type="reset" name="reset" id="buttonreset" value="Reset">					
+					</form>
+					
+	</section>
+
+  <footer>
+	<p>&copy; 2020 SHIREEN KHAN</p>
+	<p><a href="mailto:shireenk154@gmail.com"?Subject=Hello" target="_top">Contact</a></p>
+  </footer>
+</body>
+</html>

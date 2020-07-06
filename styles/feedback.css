@@ -1,0 +1,241 @@
+html {
+	background-image: url("../images/background.jpg");	
+}
+body  {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	width: 900px;
+	background-image: url("../images/bodybg.jpg");
+	margin: 0 auto; 
+	padding: 0;
+	border: 3px solid black;
+	box-shadow: 0 9px 18px 9px;
+}
+h1, h2, h3, p {
+	margin: 0;
+	padding: 0;
+}
+
+/* Header */
+header { 
+    background-image: -webkit-linear-gradient(45deg, white 0%, #9D9C9C 75%, black 100%);
+    background-image: -moz-linear-gradient(45deg, white 0%, #9D9C9C75%, black 100%);
+    background-image: -o-linear-gradient(45deg, white 0%, #9D9C9C 75%, black 100%);
+    background-image: linear-gradient(45deg, white 0%, #9D9C9C 75%, black 100%);
+    padding: 15px;
+} 
+header img { 
+	float: left; 
+	padding-right: 15px;  
+} 
+header h2 {
+	font-size: 230%;
+}
+header h3 {
+	font-size: 125%;
+	padding-bottom: 15px;
+}
+
+/* Navigation menu */
+#nav_menu {
+	clear: left;
+}
+#nav_menu ul {
+	list-style: none;
+	margin: 0;
+	position: relative;
+}
+#nav_menu ul li {
+	float: left;
+}
+#nav_menu ul ul {
+	display: none;
+	position: absolute;
+	margin:0;
+}
+
+#nav_menu ul ul li {
+	float: none;
+	display: block;
+}
+#nav_menu ul {
+	margin: 0;
+	padding: 0;
+}
+#nav_menu li {
+    display: inline-block;
+    position: relative;
+}
+#nav_menu ul li a {
+	text-align: center;
+	display: block;
+	width: 223px;
+	padding: .7em 0;
+	text-decoration: none;
+	 font-weight: bold;
+    border: 1px solid black; 	
+	background-color:black;
+	color: white;
+}
+#nav_menu ul ul ul {
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+#nav_menu li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+#nav_menu ul li a:visited{
+		text-shadow:0 1px 1px white;
+}
+#nav_menu ul li a.current {
+	color: gray;
+}
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+	background-color: gray;
+	color: black;
+}
+
+/* Sidebar */
+
+.left{
+	width: 150px;
+    float: left;
+    margin: 51px auto;
+	margin-right: 0;
+	font-weight: bold;
+    border-radius: 5px;
+	height: 457px;
+	margin-left: 0;
+}
+.left p{
+	padding-left:30px;
+	padding-bottom: 21px;
+} 
+
+.circle{
+  border-radius: 50%;
+  width:80px;
+  height:80px;
+  margin-left:20px;
+  position:relative;
+  border:1.5px solid black;
+}
+.circle:hover{
+  width:100px;
+  height:100px;
+  padding:2px;
+  position:relative;
+}
+
+.middle{
+	width: 540px;
+	float: left;
+    margin: 5px auto;
+	margin-left: 30px;
+	margin-right: 0px;
+    border-radius: 5px;
+	height: 400px;
+}
+.middle h2{
+	text-align:center;
+	padding-top:48px;
+	padding-bottom: 10px;
+}
+table{
+	text-align: center;
+	width: 104%;
+	padding: 10px;
+}
+thead{
+	color: black;
+}
+th{
+	font-weight:bold;
+	
+}
+th,td{
+	vertical-align: center;
+	height:68px;
+	border: 1px solid black;
+}
+form{
+	display:block;
+}
+form label{
+	float:left;
+	width:8em;
+}
+form input,select{
+	margin-left: 1em;
+    margin-bottom: 1em;
+}
+footer{
+	clear:both;
+	text-align:center;
+	font-size:1em;
+	padding-top:70px;
+}
+#buttonsubmit{
+	color: white;
+	background-color: black;
+	border: 1px black solid;
+	padding:7px;
+	font:5px;
+	margin-top:30px;
+	margin-left:100px;
+}
+#buttonsubmit:hover{
+	background-color:gray;
+	border: 1px white solid;
+	padding:7px;
+	font:5px;
+	margin-top:30px;
+	margin-left:100px;
+}
+#buttonreset{
+	color: white;
+	background-color: black;
+	border: 1px black solid;
+	padding:7px 17px;
+	font:5px;
+	margin-top:30px;
+	margin-left:70px;
+}
+#buttonreset:hover{
+	background-color: gray;
+	border: 1px white solid;
+	padding:7px 17px;
+	font:5px;
+	margin-top:30px;
+	margin-left:70px;
+}
+/* Footer */
+footer { 
+	clear: both;
+	border-top: 2px solid black;
+	padding: 15px;
+    background-image: -webkit-linear-gradient(45deg, black 0%, #9D9C9C 25%, white 100%);
+    background-image: -moz-linear-gradient(45deg, black 0%, #9D9C9C 25%, white 100%);
+    background-image: -o-linear-gradient(45deg, black 0%, #9D9C9C 25%, white 100%);
+    background-image: linear-gradient(45deg, black 0%, #9D9C9C 25%, white 100%);
+} 
+footer p {
+	font-size: 90%;
+	text-align: center;
+	color: black;
+}
+footer a{
+	font-size:90%;
+	color:black;
+}
+footer a:hover{
+	font-size:15px;
+}
+footer a:visited{
+	color:dark gray;
+}
